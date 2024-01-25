@@ -27,5 +27,10 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
         </Grid>
+
+        <Button
+            x:Name="TempHistory"
+            Text="Refresh"
+            Clicked="OnLoadClicked"/>
     </VerticalStackLayout>
 </ContentPage>
