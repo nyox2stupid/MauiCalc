@@ -8,7 +8,10 @@
     <ToolbarItem Text="Settings"
                  IconImageSource="settings.png"
                  Clicked="OnSettingsClicked" />
-</ContentPage.ToolbarItems>
+    <ToolbarItem Text="History"
+            IconImageSource="History.png"
+            Clicked="OnHistoryClicked" />
+    </ContentPage.ToolbarItems>
 
     <ScrollView>
         <VerticalStackLayout

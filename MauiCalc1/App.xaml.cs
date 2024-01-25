@@ -9,6 +9,7 @@
             MainPage = new AppShell();
 
             Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
+            Routing.RegisterRoute(nameof(HistoryPage), typeof(HistoryPage));
         }
     }
 }

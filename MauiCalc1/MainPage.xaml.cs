@@ -180,6 +180,11 @@ namespace MauiCalc1
             Application.Current.MainPage.Navigation.PushModalAsync(new SettingsPage(), true);
         }
 
+        private void OnHistoryClicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage.Navigation.PushModalAsync(new HistoryPage(), true);
+        }
+
         private async void OnLoadClicked(object sender, EventArgs e)
         {
             var items = await itemDatabase.GetItemsAsync();
