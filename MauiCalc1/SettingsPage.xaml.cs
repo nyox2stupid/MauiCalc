@@ -18,4 +18,9 @@ public partial class SettingsPage : ContentPage
     {
         displayButton.FontSize = value;
     }
+
+    private async void OnBackClicked(object sender, EventArgs e)
+    {
+        await Navigation.PopModalAsync();
+    }
 }

@@ -4,11 +4,29 @@
              x:Class="MauiCalc1.SettingsPage"
              Title="Settings">
     <VerticalStackLayout>
-        <Label
-            Padding="30"
-            Text="Settings"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button 
+                FontAttributes="Bold"
+                Text="Back"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                Clicked="OnBackClicked"/>
+            <Label
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Padding="30"
+                Text="Settings"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        </Grid>
         <Slider
                 Minimum="12"
                 Maximum="32"

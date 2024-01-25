@@ -11,7 +11,7 @@
     <ToolbarItem Text="History"
             IconImageSource="History.png"
             Clicked="OnHistoryClicked" />
-    </ContentPage.ToolbarItems>
+</ContentPage.ToolbarItems>
 
     <ScrollView>
         <VerticalStackLayout
