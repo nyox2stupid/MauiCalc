@@ -44,7 +44,8 @@
                     Grid.Column="1"
                     Grid.Row="4" 
                     Text="Test" 
-                    Clicked="OnLoadClicked"/>
+                    Clicked="OnLoadClicked"
+                    Margin="7" />
                 <Button 
                     TextColor="White"
                     BackgroundColor="#302C37"
