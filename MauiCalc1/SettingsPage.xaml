@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiCalc1.SettingsPage"
+             Title="Settings">
+    <VerticalStackLayout>
+        <Label
+            Padding="30"
+            Text="Settings"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Slider
+                Minimum="12"
+                Maximum="32"
+                ValueChanged="OnSliderValueChanged"
+                Margin="15" />
+        <Button x:Name="displayButton"
+                Text="Apply Font size" 
+                HorizontalOptions="Center"
+                Margin="10"
+                Clicked="ApplyFontSize"/>
+    </VerticalStackLayout>
+</ContentPage>
