@@ -36,3 +36,12 @@
 /MauiCalc1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/intermediatexaml/MauiCalc1.dll
 /MauiCalc1/obj/Debug/net8.0-windows10.0.19041.0/win10-x64/intermediatexaml/MauiCalc1.pdb
 /.vs/MauiCalc1/v17/.suo
+/MauiCalc1/obj/Debug/net8.0-android/MauiCalc1.AssemblyInfo.cs
+/MauiCalc1/obj/Debug/net8.0-android/MauiCalc1.AssemblyInfoInputs.cache
+/MauiCalc1/obj/Debug/net8.0-android/MauiCalc1.GeneratedMSBuildEditorConfig.editorconfig
+/MauiCalc1/obj/Debug/net8.0-ios/iossimulator-x64/MauiCalc1.AssemblyInfo.cs
+/MauiCalc1/obj/Debug/net8.0-ios/iossimulator-x64/MauiCalc1.AssemblyInfoInputs.cache
+/MauiCalc1/obj/Debug/net8.0-ios/iossimulator-x64/MauiCalc1.GeneratedMSBuildEditorConfig.editorconfig
+/MauiCalc1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/MauiCalc1.AssemblyInfo.cs
+/MauiCalc1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/MauiCalc1.AssemblyInfoInputs.cache
+/MauiCalc1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/MauiCalc1.GeneratedMSBuildEditorConfig.editorconfig
