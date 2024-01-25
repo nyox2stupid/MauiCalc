@@ -67,7 +67,7 @@ namespace MauiCalc1
         private void OnClearClicked(object sender, EventArgs e)
         {
             //Vibration.Vibrate(125);
-            CalcContent.Text = "0";
+            CalcContent.Text = "1";
         }
         private void OnCalcClicked(object sender, EventArgs e)
         {
