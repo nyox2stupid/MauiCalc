@@ -9,15 +9,5 @@
             Text="History"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Slider
-                Minimum="12"
-                Maximum="32"
-                ValueChanged="OnSliderValueChanged"
-                Margin="15" />
-        <Button x:Name="displayButton"
-                Text="Apply Font size" 
-                HorizontalOptions="Center"
-                Margin="10"
-                Clicked="ApplyFontSize"/>
     </VerticalStackLayout>
 </ContentPage>
