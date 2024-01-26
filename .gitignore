@@ -398,23 +398,5 @@ FodyWeavers.xsd
 *.sln.iml
 
 
-# generated manually with visual studio
-/MauiCalc1/bin/Debug/net8.0-android/com.companyname.mauicalc1-Signed.apk
-/MauiCalc1/bin/Debug/net8.0-android/com.companyname.mauicalc1-Signed.apk.idsig
-/MauiCalc1/bin/Debug/net8.0-android/com.companyname.mauicalc1.apk
-/MauiCalc1/bin/Debug/net8.0-android/MauiCalc1.dll
-/MauiCalc1/bin/Debug/net8.0-android/MauiCalc1.pdb
-/MauiCalc1/obj/Debug/net8.0-android/android/assets/MauiCalc1.dll
-/MauiCalc1/obj/Debug/net8.0-android/android/assets/MauiCalc1.pdb
-/MauiCalc1/obj/Debug/net8.0-android/android/assets/_Microsoft.Android.Resource.Designer.dll
-/MauiCalc1/obj/Debug/net8.0-android/android/bin/classes.zip
-/MauiCalc1/obj/Debug/net8.0-android/android/bin/com.companyname.mauicalc1.apk
-/MauiCalc1/obj/Debug/net8.0-android/android/AndroidManifest.xml
-/MauiCalc1/obj/Debug/net8.0-android/android/environment.arm64-v8a.ll
-/MauiCalc1/obj/Debug/net8.0-android/android/environment.arm64-v8a.o
-/MauiCalc1/obj/Debug/net8.0-android/android/manifest/AndroidManifest.xml
-/MauiCalc1/obj/Debug/net8.0-android/android-arm64/MauiCalc1.assets.cache
-/MauiCalc1/obj/Debug/net8.0-android/app_shared_libraries/arm64-v8a/libxamarin-app.so
-/MauiCalc1/obj/Debug/net8.0-android/flat/values_colors.arsc.flat
-/MauiCalc1/obj/Debug/net8.0-android/lp/101/jl/files.cache
-/MauiCalc1/obj/Debug/net8.0-android/lp/101/jl/res.zip
+# generated manually and/or with visual studio
+/MauiCalc1/obj/Debug
