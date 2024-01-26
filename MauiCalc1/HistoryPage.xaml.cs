@@ -1,5 +1,4 @@
 using System.Collections.ObjectModel;
-
 namespace MauiCalc1;
 
 public partial class HistoryPage : ContentPage
@@ -19,16 +18,14 @@ public partial class HistoryPage : ContentPage
 
     private async void OnLoadClicked(object sender, EventArgs e)
     {
-        string ttt = " ";
         var items = await itemDatabase.GetItemsAsync();
 
         MainThread.BeginInvokeOnMainThread(() =>
         {
             Items.Clear();
             //foreach (var item in items)
-            string ttt = items.LastOrDefault().Berechnung;
         });
 
-        Label label = new Label { Text = ttt };
+        //Label label = new Label { Text = ttt };
     }
 }

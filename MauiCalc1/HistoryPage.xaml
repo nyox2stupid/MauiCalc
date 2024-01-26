@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:MauiCalc1"
              x:Class="MauiCalc1.HistoryPage"
              Title="History">
     <VerticalStackLayout>
@@ -27,10 +28,26 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
         </Grid>
-
         <Button
             x:Name="TempHistory"
             Text="Refresh"
             Clicked="OnLoadClicked"/>
+        
+        <!--https://learn.microsoft.com/en-us/dotnet/maui/fundamentals/datatemplate?view=net-maui-8.0-->
+        <!--https://github.com/dotnet/maui-samples/tree/main/8.0/Data/TodoSQLite-->
+        <CollectionView 
+          VerticalOptions="Fill"
+          ItemsSource="{Binding Items}"
+          SelectionMode="Single">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:CalcHis">
+                    <Grid ColumnDefinitions="*, Auto" Padding="20">
+                        <Label Text="{Binding Berechnung}"
+                           VerticalTextAlignment="Center"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
     </VerticalStackLayout>
 </ContentPage>
