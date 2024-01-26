@@ -396,6 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+
+# generated manually with visual studio
 /MauiCalc1/bin/Debug/net8.0-android/com.companyname.mauicalc1-Signed.apk
 /MauiCalc1/bin/Debug/net8.0-android/com.companyname.mauicalc1-Signed.apk.idsig
 /MauiCalc1/bin/Debug/net8.0-android/com.companyname.mauicalc1.apk
