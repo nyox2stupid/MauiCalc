@@ -399,4 +399,4 @@ FodyWeavers.xsd
 
 
 # generated manually and/or with visual studio
-/MauiCalc1/obj/Debug
+/MauiCalc1/obj/
