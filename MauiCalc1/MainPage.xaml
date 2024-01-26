@@ -39,7 +39,13 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                
+
+                <Label 
+                    x:Name="FontSizeReference"
+                    IsEnabled="False"
+                    IsVisible="False"
+                    FontSize="40"
+                    />
                 <Button
                     Grid.Column="1"
                     Grid.Row="4" 
@@ -55,6 +61,8 @@
                     Text="⌫" 
                     Clicked="OnBackClicked"
                     HorizontalOptions="Fill"
+                    BindingContext="{x:Reference Name=FontSizeReference}"
+                    FontSize="{Binding FontSize}"
                     />
                 <Button
                     TextColor="White"
