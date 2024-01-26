@@ -9,6 +9,7 @@ public partial class HistoryPage : ContentPage
 	{
         InitializeComponent();
         itemDatabase = new CalcHisItemDatabase();
+        BindingContext = this;
     }
 
     private async void OnBackClicked(object sender, EventArgs e)
@@ -23,9 +24,17 @@ public partial class HistoryPage : ContentPage
         MainThread.BeginInvokeOnMainThread(() =>
         {
             Items.Clear();
-            //foreach (var item in items)
+            foreach (var item in items)
+            {
+                Items.Add(item);
+            }
         });
 
         //Label label = new Label { Text = ttt };
+    }
+
+    private async void OnDeleteClicked(object sender, EventArgs e)
+    {
+        await itemDatabase.DeleteItemAsync();
     }
 }

@@ -29,10 +29,14 @@
                 HorizontalOptions="Center" />
         </Grid>
         <Button
-            x:Name="TempHistory"
+            x:Name="RefreshHistory"
             Text="Refresh"
             Clicked="OnLoadClicked"/>
-        
+        <Button
+            x:Name="DeleteHistory"
+            Text="Clear"
+            Clicked="OnDeleteClicked"/>
+
         <!--https://learn.microsoft.com/en-us/dotnet/maui/fundamentals/datatemplate?view=net-maui-8.0-->
         <!--https://github.com/dotnet/maui-samples/tree/main/8.0/Data/TodoSQLite-->
         <CollectionView 

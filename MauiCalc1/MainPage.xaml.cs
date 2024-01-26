@@ -13,6 +13,7 @@ namespace MauiCalc1
     {
         bool img = false;
         int egg = 0;
+        public int fontsizeaaa { get; set; }
 
         public ObservableCollection<CalcHis> Items { get; set; } = new();
         CalcHisItemDatabase itemDatabase;
@@ -21,6 +22,8 @@ namespace MauiCalc1
         {
             InitializeComponent();
             itemDatabase = new CalcHisItemDatabase();
+            BindingContext = this;
+            fontsizeaaa = 60;
         }
 
         private void OnCounterClicked(object sender, EventArgs e)

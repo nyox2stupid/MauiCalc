@@ -37,5 +37,11 @@ namespace MauiCalc1
             else
                 return await Database.InsertAsync(item);
         }
+
+        public async Task<int> DeleteItemAsync()
+        {
+            await Init();
+            return await Database.Table<CalcHis>().DeleteAsync(x => x.ID != 0);
+        }
     }
 }
