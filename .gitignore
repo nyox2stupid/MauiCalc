@@ -400,3 +400,4 @@ FodyWeavers.xsd
 
 # generated manually and/or with visual studio
 /MauiCalc1/obj/
+/MauiCalc1/bin/
