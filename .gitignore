@@ -401,3 +401,8 @@ FodyWeavers.xsd
 # generated manually and/or with visual studio
 /MauiCalc1/obj/
 /MauiCalc1/bin/
+/MauiCalc1/bin/Release/net8.0-android/com.companyname.mauicalc1-Signed.aab
+/MauiCalc1/bin/Release/net8.0-android/com.companyname.mauicalc1-Signed.apk
+/MauiCalc1/bin/Release/net8.0-android/com.companyname.mauicalc1.aab
+/MauiCalc1/bin/Release/net8.0-android/MauiCalc1.dll
+/MauiCalc1/bin/Release/net8.0-android/MauiCalc1.pdb
