@@ -91,15 +91,11 @@ namespace MauiCalc1
             }
             try
             {
+                string berechnungtosave = CalcContent.Text;
                 CalcContent.Text = "" + (Convert.ToDecimal(new DataTable().Compute(CalcContent.Text.Replace(',', '.'), null), CultureInfo.InvariantCulture));
-                // CalcContent.Text = RoundOrNot(CalcContent.Text);
-                //CalcContent.Text = RoundOrNot(CalcContent.Text);
-                //while (CalcContent.Text[CalcContent.Text.Length - 1] == '0')
-                //{
-                //    CalcContent.Text.Remove(CalcContent.Text.Length - 1);
-                //}
+                berechnungtosave += "=" + CalcContent.Text;
                 CalcHis calcHis = new CalcHis();
-                calcHis.Berechnung = CalcContent.Text;
+                calcHis.Berechnung = berechnungtosave;
                 itemDatabase.SaveItemAsync(calcHis);
             }
             catch
@@ -138,31 +134,6 @@ namespace MauiCalc1
             if (int.Parse(result) > 0) {
                 //Vibration.Vibrate(int.Parse(result));
             }
-        }
-
-        string RoundOrNot(string input)
-        {
-            try
-            {
-                // if digits exist after '.' && last digit is 9
-                if (input.Length - 1 > input.IndexOf('.') && int.Parse("" + input[input.Length - 1]) >= 5 && input.Length > 1) {
-                    // get decimal count after '.': input.Length - input.IndexOf('.')
-                    int decount = input.Length - input.IndexOf('.');
-                    // string addup = 0.(amount of 0's for decimal count - 1)1
-                    // decimal addup = decimal.Parse(input.Substring(0, decount));
-                    string addup = "0.";
-                    for (int i = 0; i < decount - 2; i++)
-                    {
-                        addup += 0;
-                    }
-                    addup += (10 - int.Parse("" + input[input.Length - 1]));
-                    // input =
-                    input = "" + (decimal.Parse(input) + decimal.Parse(addup));
-                }
-            }
-            catch {
-            }
-            return input;
         }
 
         void toaster(string input)

@@ -28,6 +28,7 @@
                 HorizontalOptions="Center" />
         </Grid>
         <Slider
+                x:Name="FontSizeSlider"
                 Minimum="12"
                 Maximum="32"
                 ValueChanged="OnSliderValueChanged"

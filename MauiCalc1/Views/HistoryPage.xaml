@@ -14,40 +14,40 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button 
-                FontAttributes="Bold"
+            <Button
                 Text="Back"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"
                 Clicked="OnBackClicked"/>
             <Label
-                FontAttributes="Bold"
                 Grid.Column="1"
+                FontAttributes="Bold"
                 Padding="30"
                 Text="History"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
+            <Button
+                Grid.Column="2"
+                x:Name="DeleteHistory"
+                Text="Clear"
+                Clicked="OnDeleteClicked"
+                Margin="5"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
         </Grid>
-        <Button
-            x:Name="RefreshHistory"
-            Text="Refresh"
-            Clicked="OnLoadClicked"/>
-        <Button
-            x:Name="DeleteHistory"
-            Text="Clear"
-            Clicked="OnDeleteClicked"/>
 
         <!--https://learn.microsoft.com/en-us/dotnet/maui/fundamentals/datatemplate?view=net-maui-8.0-->
         <!--https://github.com/dotnet/maui-samples/tree/main/8.0/Data/TodoSQLite-->
         <CollectionView 
           VerticalOptions="Fill"
           ItemsSource="{Binding Items}"
-          SelectionMode="Single">
+          SelectionMode="Single"
+          SelectionChanged="CollectionView_SelectionChanged">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:CalcHis">
                     <Grid ColumnDefinitions="*, Auto" Padding="20">
                         <Label Text="{Binding Berechnung}"
-                           VerticalTextAlignment="Center"/>
+                        HorizontalOptions="Center"/>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
