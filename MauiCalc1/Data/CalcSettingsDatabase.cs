@@ -18,15 +18,10 @@ namespace MauiCalc1
             Database = new SQLiteAsyncConnection(Constants.DatabasePath, Constants.Flags);
             var result = await Database.CreateTableAsync<CalcSettings>();
         }
-        public async Task<List<CalcSettings>> GetItemsAsync()
+        public async Task<CalcSettings> GetSettingAsync()
         {
             await Init();
-            return await Database.Table<CalcSettings>().ToListAsync();
-        }
-        public async Task<CalcSettings> GetItemAsync(int id)
-        {
-            await Init();
-            return await Database.Table<CalcSettings>().Where(i => i.ID == id).FirstOrDefaultAsync();
+            return await Database.Table<CalcSettings>().Where(i => i.ID != 0).FirstOrDefaultAsync();
         }
 
         public async Task<int> SaveItemAsync(CalcSettings item)

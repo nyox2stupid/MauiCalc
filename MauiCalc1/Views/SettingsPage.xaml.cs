@@ -6,6 +6,7 @@ public partial class SettingsPage : ContentPage
 {
     public ObservableCollection<CalcSettings> Items { get; set; } = new();
     CalcSettingsDatabase itemDatabase;
+    CalcSettings calcSettings { get; set; } = new();
     public SettingsPage()
     {
         InitializeComponent();
@@ -18,12 +19,13 @@ public partial class SettingsPage : ContentPage
         value = (int)args.NewValue;
         displayButton.Text = String.Format("Apply Font size {0}", value);
         displayButton.FontSize = value; 
+        calcSettings.globalfontsize = value;
     }
 
     private void ApplyFontSize(object sender, EventArgs args)
     {
         displayButton.FontSize = value;
-        
+        itemDatabase.SaveItemAsync(calcSettings);
     }
 
     private async void OnBackClicked(object sender, EventArgs e)
@@ -33,7 +35,16 @@ public partial class SettingsPage : ContentPage
 
     protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
-        // int val = item
-        // FontSizeSlider.Value = val;
+        calcSettings = await itemDatabase.GetSettingAsync();
+        if (calcSettings == null)
+        {
+            calcSettings = new CalcSettings();
+            return;
+        }
+
+        MainThread.BeginInvokeOnMainThread(() =>
+        {
+            FontSizeSlider.Value = calcSettings.globalfontsize;
+        });
     }
 }
