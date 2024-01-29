@@ -1,4 +1,4 @@
-(main branch is outdated, please use `DataTemplateTest` until merged)
+(`main` branch is outdated, please use `DataTemplateTest` until merged)
 
 # MauiCalc
 
