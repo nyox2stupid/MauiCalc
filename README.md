@@ -23,8 +23,8 @@ MauiCalc is a rather simple calculator app built in [Microsoft's .NET MAUI](http
 
 ## Usage
 
-1. Launch the app
-2. Get a brain
+1. Get a brain
+2. Launch the app
 
 ## Contributing
 
