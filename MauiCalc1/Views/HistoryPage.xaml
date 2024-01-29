@@ -5,36 +5,13 @@
              x:Class="MauiCalc1.HistoryPage"
              Title="History">
     <VerticalStackLayout>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Button
-                Text="Back"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center"
-                Clicked="OnBackClicked"/>
-            <Label
-                Grid.Column="1"
-                FontAttributes="Bold"
-                Padding="30"
-                Text="History"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-            <Button
+        <Button
                 Grid.Column="2"
                 x:Name="DeleteHistory"
                 Text="Clear"
                 Clicked="OnDeleteClicked"
-                Margin="5"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-        </Grid>
+                Margin="5" 
+                HorizontalOptions="Fill" />
 
         <!--https://learn.microsoft.com/en-us/dotnet/maui/fundamentals/datatemplate?view=net-maui-8.0-->
         <!--https://github.com/dotnet/maui-samples/tree/main/8.0/Data/TodoSQLite-->

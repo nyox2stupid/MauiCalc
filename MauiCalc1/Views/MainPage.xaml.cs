@@ -149,14 +149,14 @@ namespace MauiCalc1
             toast.Show(cancellationTokenSource.Token);
         }
 
-        private void OnSettingsClicked(object sender, EventArgs e)
+        private async void OnSettingsClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage.Navigation.PushModalAsync(new SettingsPage(), true);
+            await Shell.Current.GoToAsync(nameof(SettingsPage), true);
         }
 
-        private void OnHistoryClicked(object sender, EventArgs e)
+        private async void OnHistoryClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage.Navigation.PushModalAsync(new HistoryPage(), true);
+            await Shell.Current.GoToAsync(nameof(HistoryPage), true);
         }
 
         private async void OnLoadClicked(object sender, EventArgs e)

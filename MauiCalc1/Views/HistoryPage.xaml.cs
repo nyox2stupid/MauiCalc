@@ -14,11 +14,6 @@ public partial class HistoryPage : ContentPage
         BindingContext = this;
     }
 
-    private async void OnBackClicked(object sender, EventArgs e)
-    {
-        await Navigation.PopModalAsync();
-    }
-
     private async void OnDeleteClicked(object sender, EventArgs e)
     {
         await itemDatabase.DeleteItemAsync();

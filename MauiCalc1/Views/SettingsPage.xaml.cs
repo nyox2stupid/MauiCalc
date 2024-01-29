@@ -28,11 +28,6 @@ public partial class SettingsPage : ContentPage
         itemDatabase.SaveItemAsync(calcSettings);
     }
 
-    private async void OnBackClicked(object sender, EventArgs e)
-    {
-        await Navigation.PopModalAsync();
-    }
-
     protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
         calcSettings = await itemDatabase.GetSettingAsync();
