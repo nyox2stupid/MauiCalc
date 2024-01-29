@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TfjLXKI4Zg1nWrR4+3j6ob+hYcb5OILSCZlreDtBKDsigYI+tglq5LksiYlOivvCvFYdDBp4flkVIQad4otgBA==",
+  "dgSpecHash": "Z2Z9r1jA0SkOwVABfw/FBn7dMsrs1dJYorKkUn3zhRuFi69I3HcweDGKgnZvhg6X5KoD8qnPTz7yyibl0ZSN4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JanBruns\\source\\repos\\MauiCalc\\MauiCalc1\\MauiCalc1.csproj",
+  "projectFilePath": "C:\\Users\\JanBruns\\Source\\Repos\\MauiCalc\\MauiCalc1\\MauiCalc1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JanBruns\\.nuget\\packages\\communitytoolkit.maui\\7.0.1\\communitytoolkit.maui.7.0.1.nupkg.sha512",
     "C:\\Users\\JanBruns\\.nuget\\packages\\communitytoolkit.maui.core\\7.0.1\\communitytoolkit.maui.core.7.0.1.nupkg.sha512",

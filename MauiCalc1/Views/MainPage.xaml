@@ -5,10 +5,10 @@
              Title="Calculator" >
     <ContentPage.ToolbarItems>
     <ToolbarItem Text="Settings"
-                 IconImageSource="settings.png"
-                 Clicked="OnSettingsClicked" />
+            IconImageSource="settings.png"
+            Clicked="OnSettingsClicked" />
     <ToolbarItem Text="History"
-            IconImageSource="History.png"
+            IconImageSource="archive.png"
             Clicked="OnHistoryClicked" />
 </ContentPage.ToolbarItems>
 

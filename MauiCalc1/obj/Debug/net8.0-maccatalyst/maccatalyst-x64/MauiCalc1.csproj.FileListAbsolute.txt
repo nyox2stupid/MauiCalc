@@ -611,3 +611,6 @@ C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-maccatalyst\m
 C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\MauiCalc1.pdb
 C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\MauiCalc1.genruntimeconfig.cache
 C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\MauiCalc1.dll
+C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
+C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf

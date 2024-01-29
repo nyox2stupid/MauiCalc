@@ -629,3 +629,11 @@ C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-ios\iossimula
 C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-ios\iossimulator-x64\MauiCalc1.pdb
 C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-ios\iossimulator-x64\MauiCalc1.genruntimeconfig.cache
 C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-ios\iossimulator-x64\ref\MauiCalc1.dll
+C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\MauiInfo.plist
+C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\MauiSplash.storyboard
+C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449.png
+C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@2x.png
+C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@3x.png
+C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\MauiInfo.plist
+C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Users\JanBruns\source\repos\MauiCalc\MauiCalc1\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\OpenSans-Semibold.ttf
