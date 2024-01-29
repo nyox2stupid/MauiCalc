@@ -36,7 +36,7 @@ public partial class HistoryPage : ContentPage
         MainThread.BeginInvokeOnMainThread(() =>
         {
             Items.Clear();
-            foreach (var item in items)
+            foreach (var item in items.OrderByDescending(dbitem => dbitem.ID))
             {
                 Items.Add(item);
             }
@@ -45,9 +45,11 @@ public partial class HistoryPage : ContentPage
 
     private async void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        // string clickeditem = Item
-        // Clipboard.SetTextAsync(clickeditem);
-        // toaster($"\"{t}\" copied to clipboard");
+        if (e.CurrentSelection.FirstOrDefault() is not CalcHis item)
+            return;
+        string clickeditem = item.Berechnung;
+        Clipboard.SetTextAsync(clickeditem);
+        toaster($"\"{clickeditem}\" copied to clipboard");
     }
 
     void toaster(string input)
