@@ -159,6 +159,11 @@ namespace MauiCalc1
             await Shell.Current.GoToAsync(nameof(HistoryPage), true);
         }
 
+        private async void OnInfoClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(InfoPage), true);
+        }
+
         private async void OnLoadClicked(object sender, EventArgs e)
         {
             var items = await itemDatabase.GetItemsAsync();
