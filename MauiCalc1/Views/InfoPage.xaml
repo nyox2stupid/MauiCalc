@@ -12,7 +12,7 @@
                HorizontalOptions="Center" />
         <Label Text="by nyox"
                HorizontalOptions="Center" />
-        <Button ImageSource="github.png" 
+        <Button ImageSource="github.svg" 
                 Margin="10"
                 HorizontalOptions="Center" 
                 Clicked="OnGitClicked"/>
