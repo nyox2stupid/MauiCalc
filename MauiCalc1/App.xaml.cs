@@ -10,6 +10,7 @@
 
             Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
             Routing.RegisterRoute(nameof(HistoryPage), typeof(HistoryPage));
+            Routing.RegisterRoute(nameof(InfoPage), typeof(InfoPage));
         }
     }
 }
