@@ -1,5 +1,3 @@
-(`main` branch is outdated, please use `DataTemplateTest` until merged)
-
 # MauiCalc
 
 MauiCalc is a rather simple calculator app built in [Microsoft's .NET MAUI](https://dotnet.microsoft.com/en-us/apps/maui). The app is designed to perform basic arithmetic operations and store these in a [SQLite](https://www.sqlite.org/index.html) based history. 
