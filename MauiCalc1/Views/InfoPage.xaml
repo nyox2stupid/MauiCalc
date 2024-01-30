@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiCalc1.InfoPage"
-             Title="Info">
+             Title="Info" >
     <VerticalStackLayout>
         <Label Text="Calculator"
                HorizontalOptions="Center" 
@@ -10,9 +10,7 @@
                Margin="15"/>
         <Label Text="built in Microsoft's .NET MAUI"
                HorizontalOptions="Center" />
-        <Label Text="by nyox"
-               HorizontalOptions="Center" />
-        <Button ImageSource="github.svg" 
+        <Button ImageSource="github.png" 
                 Margin="10"
                 HorizontalOptions="Center" 
                 Clicked="OnGitClicked"/>

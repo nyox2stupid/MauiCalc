@@ -5,13 +5,13 @@
              Title="Calculator" >
     <ContentPage.ToolbarItems>
     <ToolbarItem Text="Settings"
-            IconImageSource="settings.svg"
+            IconImageSource="settings.png"
             Clicked="OnSettingsClicked" />
     <ToolbarItem Text="History"
-            IconImageSource="archive.svg"
+            IconImageSource="archive.png"
             Clicked="OnHistoryClicked" />
     <ToolbarItem Text="Info"
-            IconImageSource="info.svg"
+            IconImageSource="info.png"
             Clicked="OnInfoClicked" />
     </ContentPage.ToolbarItems>
 
@@ -50,8 +50,7 @@
                     Grid.Row="4"
                     Text="⌫" 
                     Clicked="OnBackClicked"
-                    HorizontalOptions="Fill"
-                    FontSize="{Binding fontsizeaaa}" />
+                    HorizontalOptions="Fill" />
                 <Button
                     TextColor="White"
                     BackgroundColor="#70608C"

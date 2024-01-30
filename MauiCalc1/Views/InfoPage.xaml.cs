@@ -17,7 +17,7 @@ public partial class InfoPage : ContentPage
         }
         catch (Exception ex)
         {
-            // An unexpected error occurred. No browser may be installed on the device.
+            DisplayAlert("Error", "An unexpected error occurred. No browser may be installed on the device.", "OK");
         }
     }
 }

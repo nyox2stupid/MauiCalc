@@ -1,11 +1,8 @@
 ﻿using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
-using Microsoft.Maui.Animations;
-using SQLite;
 using System.Collections.ObjectModel;
 using System.Data;
 using System.Globalization;
-using System.Threading.Tasks;
 
 namespace MauiCalc1
 {
@@ -13,7 +10,6 @@ namespace MauiCalc1
     {
         bool img = false;
         int egg = 0;
-        public int fontsizeaaa { get; set; }
 
         public ObservableCollection<CalcHis> Items { get; set; } = new();
         CalcHisItemDatabase itemDatabase;
@@ -23,7 +19,6 @@ namespace MauiCalc1
             InitializeComponent();
             itemDatabase = new CalcHisItemDatabase();
             BindingContext = this;
-            fontsizeaaa = 60;
         }
 
         private void OnCounterClicked(object sender, EventArgs e)
@@ -53,14 +48,6 @@ namespace MauiCalc1
                 DisplayAlert("Are you retarted?", "You cant place a symbol there!", "sorry im retarted");
                 //Vibration.Vibrate(1000);
             }
-            //else if (CalcContent.Text.Length < 17)
-            //{
-            //    CalcContent.Text += btn;
-            //}
-            //else
-            //{
-            //    toaster("max decimal index count reached");
-            //}
             else
             { 
                 CalcContent.Text += btn; 
@@ -92,7 +79,7 @@ namespace MauiCalc1
             try
             {
                 string berechnungtosave = CalcContent.Text;
-                CalcContent.Text = "" + (Convert.ToDecimal(new DataTable().Compute(CalcContent.Text.Replace(',', '.'), null), CultureInfo.InvariantCulture));
+                CalcContent.Text = "" + (Convert.ToDouble(new DataTable().Compute(CalcContent.Text.Replace(',', '.'), null), CultureInfo.InvariantCulture));
                 berechnungtosave += "=" + CalcContent.Text;
                 CalcHis calcHis = new CalcHis();
                 calcHis.Berechnung = berechnungtosave;
@@ -171,7 +158,6 @@ namespace MauiCalc1
             MainThread.BeginInvokeOnMainThread(() =>
             {
                 Items.Clear();
-                //foreach (var item in items)
                 CalcContent.Text = items.LastOrDefault().Berechnung;                    
             });
         }
