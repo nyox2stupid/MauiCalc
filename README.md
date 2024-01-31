@@ -6,7 +6,7 @@ MauiCalc is a rather simple calculator app built in [Microsoft's .NET MAUI](http
 
 - Basic arithmetic operations such as addition, subtraction, multiplication, and division
 - History of calculations stored in SQLite database
-- Settings tab (WIP)
+- Settings tab
 
 | ![calculator page on android](images/calculator-android.jpg) | ![history page on android](images/history-android.png) | ![settings page on android](images/settings-android.png) |
 | :------------------- | :----------: | ----------: |
