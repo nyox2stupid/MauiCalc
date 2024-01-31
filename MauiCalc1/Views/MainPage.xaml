@@ -25,7 +25,8 @@
                 SemanticProperties.HeadingLevel="Level1" 
                 Clicked="OnLabelClicked" 
                 TextColor="White"
-                BackgroundColor="#00550303" />
+                BackgroundColor="#00550303"
+                FontSize="{Binding Globalfontsize}" />
 
             <Grid>
                 <Grid.RowDefinitions>

@@ -189,10 +189,13 @@ namespace MauiCalc1
         {
             base.OnNavigatedTo(args);
             settings = await settingsDatabase.GetSettingAsync();
-            MainThread.BeginInvokeOnMainThread(() =>
+            if (settings != null)
             {
-                Globalfontsize = settings.globalfontsize;
-            });
+                MainThread.BeginInvokeOnMainThread(() =>
+                {
+                    Globalfontsize = settings.globalfontsize;
+                });
+            }
         }
     }
 }
