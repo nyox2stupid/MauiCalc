@@ -33,4 +33,4 @@ Contributions are welcome! If you find any bugs or have suggestions for new feat
 
 Icons used in this project are from [feathericons](https://feathericons.com/).
 
-![qr code for this repo](images/qr-code.png)
+![qr code for this repo](images/qr-code-nobg.png)
