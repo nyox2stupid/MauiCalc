@@ -42,4 +42,5 @@ public partial class SettingsPage : ContentPage
             FontSizeSlider.Value = calcSettings.globalfontsize;
         });
     }
+
 }

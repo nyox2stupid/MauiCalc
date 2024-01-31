@@ -1,23 +1,46 @@
 ﻿using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Data;
 using System.Globalization;
+using System.Xml.Linq;
 
 namespace MauiCalc1
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : INotifyPropertyChanged
     {
         bool img = false;
         int egg = 0;
+        private int globalfontsize;
+        public int Globalfontsize
+        {
+            get
+            {
+                return globalfontsize;
+            }
+            set
+            {
+                globalfontsize = value; 
+                OnPropertyChanged(nameof(Globalfontsize));
+            }
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         public ObservableCollection<CalcHis> Items { get; set; } = new();
         CalcHisItemDatabase itemDatabase;
+        CalcSettingsDatabase settingsDatabase;
+        CalcSettings settings;
 
         public MainPage()
         {
             InitializeComponent();
             itemDatabase = new CalcHisItemDatabase();
+            settingsDatabase = new CalcSettingsDatabase();
             BindingContext = this;
         }
 
@@ -54,7 +77,7 @@ namespace MauiCalc1
             }
             SemanticScreenReader.Announce(CalcContent.Text);
         }
-        private void OnClearClicked(object sender, EventArgs e)
+        private async void OnClearClicked(object sender, EventArgs e)
         {
             //Vibration.Vibrate(125);
             CalcContent.Text = "0";
@@ -159,6 +182,16 @@ namespace MauiCalc1
             {
                 Items.Clear();
                 CalcContent.Text = items.LastOrDefault().Berechnung;                    
+            });
+        }
+
+        protected override async void OnNavigatedTo(NavigatedToEventArgs args)
+        {
+            base.OnNavigatedTo(args);
+            settings = await settingsDatabase.GetSettingAsync();
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                Globalfontsize = settings.globalfontsize;
             });
         }
     }
