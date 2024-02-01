@@ -31,6 +31,6 @@ MauiCalc is a rather simple calculator app built in [Microsoft's .NET MAUI](http
 
 Contributions are welcome! If you find any bugs or have suggestions for new features, please open an issue or submit a pull request. (will not read)
 
-Icons used in this project are from [feathericons](https://feathericons.com/).
+Icons used in this project are from [Google Material](https://fonts.google.com/icons).
 
 ![qr code for this repo](images/qr-code-nobg.png)
