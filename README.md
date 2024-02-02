@@ -1,36 +1,37 @@
 # MauiCalc
 
-MauiCalc is a rather simple calculator app built in [Microsoft's .NET MAUI](https://dotnet.microsoft.com/en-us/apps/maui). The app is designed to perform basic arithmetic operations and store these in a [SQLite](https://www.sqlite.org/index.html) based history. 
+MauiCalc ist ein einfacher Rechner, der auf Microsoft .NET MAUI basiert. Dieses Programm wurde entwickelt, um einfache arithmetische und historische Daten basierend auf SQLite auszuführen.
 
-## Features
+## Ereignis
 
-- Basic arithmetic operations such as addition, subtraction, multiplication, and division
-- History of calculations stored in SQLite database
-- Settings tab
+- Einfache mathematische Operationen wie Addition, Subtraktion, Multiplikation und Division
+- Der Kontoverlauf wird in einer SQLite-Datenbank gespeichert
+- Registerkarte „Einstellungen“.
 
-| ![calculator page on android](images/calculator-android.jpg) | ![history page on android](images/history-android.png) | ![settings page on android](images/settings-android.png) |
+| ![Android-Zähler](images/calculator-android.jpg) | ![Verlaufsseite](images/history-android.png) | ![Einstellungsseite](images/settings-android.png) |
 | :------------------- | :----------: | ----------: |
 
-## Installation
+## anwenden
 
-1. Clone the repository to your local machine.
-2. Open the solution file in Visual Studio.
-3. Build and run the project.
+1. Verbinden Sie Ihren Speicher mit Ihrem lokalen Computer.
+2. Öffnen Sie die Lösungsdatei in Visual Studio.
+3. Erstellen und verwalten Sie Projekte.
 
-## Requirements
-- A Windows Computer
-- Visual Studio 2022
-- At least 2 braincells
+## Wunsch
 
-## Usage
+- Windows-Computer
+- Videostudio 2022
+- etwa 2 Gehirne
 
-1. Get a brain
-2. Launch the app
+## dies nutzen
 
-## Contributing
+1. das Gehirn stehlen
+2. beginne zu arbeiten
 
-Contributions are welcome! If you find any bugs or have suggestions for new features, please open an issue or submit a pull request. (will not read)
+## brauchen
 
-Icons used in this project are from [Google Material](https://fonts.google.com/icons) and [feathericons](https://feathericons.com/).
+Spenden sind willkommen. Wenn Sie einen Fehler finden oder Vorschläge für neue Funktionen haben, stellen Sie bitte eine Frage oder senden Sie eine Anfrage. (Ich habe es noch nicht gelesen)
 
-![qr code for this repo](images/qr-code-nobg.png)
+Die in diesem Projekt verwendeten Bilder stammen von Google Material und feathericons.
+
+![QR-Code für dieses Repository](images/qr-code-nobg.png)
