@@ -53,7 +53,7 @@ namespace MauiCalc1
             {
                 if (btn == "+" || btn == "-" || btn == "*" || btn == "/" )
                 {
-                    DisplayAlert("Are you retarted?", "You cant place a symbol there!", "sorry im retarted");
+                    DisplayAlert("Sind Sie psychisch krank?", "Da darf man kein Schild anbringen!", "Entschuldigung, ich bin im Rückstand");
                     //Vibration.Vibrate(1000);
                 }
                 else if (CalcContent.Text == "0" && btn != ".")
@@ -68,7 +68,7 @@ namespace MauiCalc1
             }
             else if (CalcContent.Text[CalcContent.Text.Length - 1] == '.' && btn == ".")
             {
-                DisplayAlert("Are you retarted?", "You cant place a symbol there!", "sorry im retarted");
+                DisplayAlert("Sind Sie psychisch krank?", "Da darf man kein Schild anbringen!", "Entschuldigung, ich bin im Rückstand");
                 //Vibration.Vibrate(1000);
             }
             else
@@ -110,7 +110,7 @@ namespace MauiCalc1
             }
             catch
             {
-                DisplayAlert("Error!", "Invalid Operation", "Ok");
+                DisplayAlert("Fehler!", "Kein Fehler", "OK.");
             }
         }
 
@@ -134,13 +134,13 @@ namespace MauiCalc1
                 //Vibration.Vibrate(125);
                 Clipboard.SetTextAsync(CalcContent.Text);
 
-                toaster($"\"{CalcContent.Text}\" copied to clipboard");
+                toaster($"\"{CalcContent.Text}\" In temporären Speicher kopieren");
             }
         }
 
         private async void OnSecretClicked(object sender, EventArgs e)
         {
-            string result = await DisplayPromptAsync("vibrate test", "Enter time (ms) to vibrate", keyboard: Keyboard.Numeric);
+            string result = await DisplayPromptAsync("schrecklicher Test", "Geben Sie die Schwingzeit (ms) ein.", keyboard: Keyboard.Numeric);
             if (int.Parse(result) > 0) {
                 //Vibration.Vibrate(int.Parse(result));
             }

@@ -2,15 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiCalc1.MainPage"
-             Title="Calculator" >
+             Title="EIN TASCHENRECHNER IST EIN GERÄT" >
     <ContentPage.ToolbarItems>
-    <ToolbarItem Text="Settings"
+    <ToolbarItem Text="PLANUNG"
             IconImageSource="settings.png"
             Clicked="OnSettingsClicked" />
-    <ToolbarItem Text="History"
+    <ToolbarItem Text="GESCHICHTE"
             IconImageSource="archive.png"
             Clicked="OnHistoryClicked" />
-    <ToolbarItem Text="Info"
+    <ToolbarItem Text="WISSEN"
             IconImageSource="info.png"
             Clicked="OnInfoClicked" />
     </ContentPage.ToolbarItems>
@@ -55,7 +55,6 @@
                     FontSize="{Binding Globalfontsize}" />
                 <Button
                     TextColor="White"
-                    BackgroundColor="#70608C"
                     Margin="7"
                     Grid.Column="2"
                     Grid.Row="3"
@@ -65,7 +64,6 @@
                     FontSize="{Binding Globalfontsize}" />
                 <Button
                     TextColor="White"
-                    BackgroundColor="#70608C"
                     Margin="7"
                     Grid.Column="0"
                     Grid.Row="3"
@@ -75,7 +73,7 @@
                     FontSize="{Binding Globalfontsize}" />
                 <Button
                     TextColor="White"
-                    BackgroundColor="#9572D0"
+                    BackgroundColor="#000000"
                     Margin="7"
                     Grid.Column="3"
                     Grid.Row="0"
@@ -85,7 +83,7 @@
                     FontSize="{Binding Globalfontsize}" />
                 <Button
                     TextColor="White"
-                    BackgroundColor="#9572D0"
+                    BackgroundColor="#FF0000"
                     Margin="7"
                     Grid.Column="3"
                     Grid.Row="1"
@@ -95,7 +93,7 @@
                     FontSize="{Binding Globalfontsize}" />
                 <Button
                     TextColor="White"
-                    BackgroundColor="#9572D0"
+                    BackgroundColor="#FFD200"
                     Margin="7"
                     Grid.Column="3"
                     Grid.Row="2"
@@ -105,7 +103,6 @@
                     FontSize="{Binding Globalfontsize}" />
                 <Button
                     TextColor="White"
-                    BackgroundColor="#9572D0"
                     Margin="7"
                     Grid.Column="3"
                     Grid.Row="3"
@@ -128,7 +125,8 @@
                     Text="0" 
                     Clicked="OnCounterClicked"
                     HorizontalOptions="Fill"
-                    FontSize="{Binding Globalfontsize}" />
+                    FontSize="{Binding Globalfontsize}"
+                    BackgroundColor="#B7B7B7" />
                 <Button
                     Margin="7"
                     Grid.Column="0"
@@ -136,7 +134,8 @@
                     Text="1" 
                     Clicked="OnCounterClicked"
                     HorizontalOptions="Fill"
-                    FontSize="{Binding Globalfontsize}" />
+                    FontSize="{Binding Globalfontsize}"
+                    BackgroundColor="#FFD200"/>
                 <Button
                     Margin="7"
                     Grid.Column="1"
@@ -144,7 +143,8 @@
                     Text="2" 
                     Clicked="OnCounterClicked"
                     HorizontalOptions="Fill"
-                    FontSize="{Binding Globalfontsize}" />
+                    FontSize="{Binding Globalfontsize}"
+                    BackgroundColor="#FFD200" />
                 <Button
                     Margin="7"
                     Grid.Column="2"
@@ -152,7 +152,8 @@
                     Text="3" 
                     Clicked="OnCounterClicked"
                     HorizontalOptions="Fill"
-                    FontSize="{Binding Globalfontsize}" />
+                    FontSize="{Binding Globalfontsize}"
+                    BackgroundColor="#FFD200" />
                 <Button
                     Margin="7"
                     Grid.Column="0"
@@ -160,7 +161,8 @@
                     Text="4" 
                     Clicked="OnCounterClicked"
                     HorizontalOptions="Fill"
-                    FontSize="{Binding Globalfontsize}" />
+                    FontSize="{Binding Globalfontsize}"
+                    BackgroundColor="#FF0000" />
                 <Button
                     Margin="7"
                     Grid.Column="1"
@@ -168,7 +170,8 @@
                     Text="5" 
                     Clicked="OnCounterClicked"
                     HorizontalOptions="Fill"
-                    FontSize="{Binding Globalfontsize}" />
+                    FontSize="{Binding Globalfontsize}"
+                    BackgroundColor="#FF0000" />
                 <Button
                     Margin="7"
                     Grid.Column="2"
@@ -176,31 +179,8 @@
                     Text="6" 
                     Clicked="OnCounterClicked"
                     HorizontalOptions="Fill"
-                    FontSize="{Binding Globalfontsize}" />
-                <Button
-                    Margin="7"
-                    Grid.Column="0"
-                    Grid.Row="1"
-                    Text="4" 
-                    Clicked="OnCounterClicked"
-                    HorizontalOptions="Fill"
-                    FontSize="{Binding Globalfontsize}" />
-                <Button
-                    Margin="7"
-                    Grid.Column="1"
-                    Grid.Row="1"
-                    Text="5" 
-                    Clicked="OnCounterClicked"
-                    HorizontalOptions="Fill"
-                    FontSize="{Binding Globalfontsize}" />
-                <Button
-                    Margin="7"
-                    Grid.Column="2"
-                    Grid.Row="1"
-                    Text="6" 
-                    Clicked="OnCounterClicked"
-                    HorizontalOptions="Fill"
-                    FontSize="{Binding Globalfontsize}" />
+                    FontSize="{Binding Globalfontsize}"
+                    BackgroundColor="#FF0000" />
                 <Button
                     Margin="7"
                     Grid.Column="0"
@@ -208,7 +188,8 @@
                     Text="7" 
                     Clicked="OnCounterClicked"
                     HorizontalOptions="Fill"
-                    FontSize="{Binding Globalfontsize}" />
+                    FontSize="{Binding Globalfontsize}"
+                    BackgroundColor="#000000" />
                 <Button
                     Margin="7"
                     Grid.Column="1"
@@ -216,7 +197,8 @@
                     Text="8" 
                     Clicked="OnCounterClicked"
                     HorizontalOptions="Fill"
-                    FontSize="{Binding Globalfontsize}" />
+                    FontSize="{Binding Globalfontsize}"
+                    BackgroundColor="#000000" />
                 <Button
                     Margin="7"
                     Grid.Column="2"
@@ -224,7 +206,8 @@
                     Text="9" 
                     Clicked="OnCounterClicked"
                     HorizontalOptions="Fill"
-                    FontSize="{Binding Globalfontsize}" />
+                    FontSize="{Binding Globalfontsize}"
+                    BackgroundColor="#000000" />
                 <Button
                     Margin="7"
                     Grid.Column="0"

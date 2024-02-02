@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:MauiCalc1"
              x:Class="MauiCalc1.HistoryPage"
-             Title="History">
+             Title="GESCHICHTE">
     <VerticalStackLayout>
         <Button
                 Grid.Column="2"
                 x:Name="DeleteHistory"
-                Text="Clear"
+                Text="Säubern"
                 Clicked="OnDeleteClicked"
                 Margin="5" 
                 HorizontalOptions="Fill" />
